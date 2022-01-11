@@ -436,7 +436,7 @@ module SimpleCov
 
       @coverage_start_arguments_supported = begin
         require "coverage"
-        !Coverage.method(:start).arity.zero?
+        !RubyCoverage.method(:start).arity.zero?
       end
     end
 
